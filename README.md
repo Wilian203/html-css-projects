@@ -21,5 +21,7 @@ Este repositorio contiene diversos proyectos creados durante mi aprendizaje de *
 💼 *Desarrollador Frontend en formación*  
 📍 [LinkedIn](www.linkedin.com/in/wilian-marinez) | [GitHub](https://github.com/Wilian203)  
 
+📢 Si te gusta mi trabajo, no olvides dar ⭐ al repositorio!
+
 
 
