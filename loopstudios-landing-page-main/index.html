@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de estudio">
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- preload -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      crossorigin="crossorigin"
+      as="font"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__barra contenedor">
+        <h1 class="header__logo m-0">loopstudios</h1>
+
+        <nav class="navegacion">
+          <a class="navegacion__enlaces" href="#">About</a>
+          <a class="navegacion__enlaces" href="#">Careears</a>
+          <a class="navegacion__enlaces" href="#">Events</a>
+          <a class="navegacion__enlaces" href="#">Products</a>
+          <a class="navegacion__enlaces" href="#">Support</a>
+        </nav>
+        <div class="header__menu-hamburguesa">
+          <img src="images/icon-hamburger.svg" alt="menu de hamburguesa" />
+        </div>
+      </div>
+      <!-- header__barra -->
+      <div class="header__contenido contenedor">
+        <h2 class="header__texto">Immersive Expiriences that deliver</h2>
+      </div>
+
+      <!-- menu despelgable -->
+      <div class="menu">
+        <div class="menu__header">
+          <span class="menu__close">&times;</span>
+          <span class="menu__logo">loopstudios</span>
+        </div>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Sobre Nosotros</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Eventos</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Productos</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Soporte</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Carreras</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contenedor section-1">
+      <div class="grid section-1__imagen">
+        <div class="section-1__contenido">
+          <h2 class="section-1__titulo m-0">The leader in interactive vr</h2>
+          <p class="section-1__texto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+            debitis ipsam adipisci dolorem qui consequuntur voluptatum odit iste
+            quas quis perferendis ducimus quidem iure voluptate consequatur
+            quisquam alias, sapiente nesciunt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main class="galeria contenedor">
+      <div class="galeria__header">
+        <h2 class="galeria__titulo">Our Creations</h2>
+        <div class="alinear-derecha">
+          <a class="section-1__boton" href="#">See All</a>
+        </div>
+      </div>
+      <!-- galeria__header -->
+
+      <div class="galeria__grid">
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-deep-earth.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-deep-earth.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">Deep <br> Heart</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-night-arcade.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-night-arcade.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">Night <br> Arcade</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-soccer-team.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-soccer-team.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">Soccer <br> Team Vr</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-grid.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-grid.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">The <br> Grid</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-from-above.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-from-above.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">From up avoe <br> vr</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-pocket-borealis.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-pocket-borealis.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">Pocket <br> Borealis</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-curiosity.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-curiosity.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">The <br> Curiosity</h3>
+          </div>
+          <!-- galeria__imagen -->
+
+          <div class="galeria__imagen">
+            <picture>
+              <source loading="lazy" srcset = "images/desktop/image-fisheye.webp"type="image/webp">
+              <img loading="lazy" src="images/desktop/image-fisheye.jpg" alt="image-deep-earth">
+            </picture>
+            <h3 class="galeria__texto">Make it <br> fisheye</h3>
+          </div>
+          <!-- galeria__imagen -->
+      </div>
+    </main>
+    
+
+    <footer class="footer">
+      <div class="footer__flex-1">
+          <h2 class="footer__logo">loopstudios</h2>
+          <div class="footer__redes">
+              <img src="images/icon-facebook.svg" alt="icon-facebook">
+              <img src="images/icon-twitter.svg" alt="icon-twitter">
+              <img src="images/icon-pinterest.svg" alt="icon-pinterest">
+              <img src="images/icon-instagram.svg" alt="icon-instagram">
+          </div>
+      </div>
+
+      <div class="footer__flex-2">
+        <nav class="navegacion footer__navegacion">
+          <a class="navegacion__enlaces footer__enlaces" href="#">About</a>
+          <a class="navegacion__enlaces footer__enlaces" href="#">Careears</a>
+          <a class="navegacion__enlaces footer__enlaces" href="#">Events</a>
+          <a class="navegacion__enlaces footer__enlaces" href="#">Products</a>
+          <a class="navegacion__enlaces footer__enlaces" href="#">Support</a>
+        </nav>
+        <p class="footer__parafo m-0">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
