@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      crossorigin="crossorigin"
+      as="font"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <header class="header contenedor">
+      <a href="index.html">
+        <h1 class="header__logo">
+          <img loading="lazy" src="assets/images/logo.svg" alt="logo" />
+        </h1>
+      </a>
+
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#">Home</a>
+        <a class="navegacion__enlace" href="#">New</a>
+        <a class="navegacion__enlace" href="#">Popular</a>
+        <a class="navegacion__enlace" href="#">Trending</a>
+        <a class="navegacion__enlace" href="#">Categories</a>
+      </nav>
+
+      <div class="header__menu-hamburguesa">
+        <img loading="lazy" src="assets/images/icon-menu.svg" alt="icon-menu" />
+      </div>
+    </header>
+
+      <!-- Fondo oscuro -->
+    <div class="menu__overlay"></div>
+
+    <!-- Menú deslizable -->
+    <nav class="menu__drawer">
+      <button class="menu__close" aria-label="Close menu">✕</button>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#">Home</a></li>
+        <li class="menu__item"><a href="#">New</a></li>
+        <li class="menu__item"><a href="#">Popular</a></li>
+        <li class="menu__item"><a href="#">Trending</a></li>
+        <li class="menu__item"><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+
+    <div class="contenedor grid">
+      <main class="blog">
+        <article class="entrada">
+          <div class="entrada__imagen">
+            <img
+              loading="lazy"
+              src="assets/images/image-web-3-desktop.jpg"
+              alt="image-web-3-desktop"
+            />
+          </div>
+        </article>
+
+        <article class="entrada__contenido">
+          <h2 class="entrada__titulo">The Brightc Future of Web 3.0 ?</h2>
+          <div class="entrada__texto">
+            <p class="entrada__parrafo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio pariatur minima inventore aliquid a vel, tempore
+              reiciendis debitis necessitatibus omnis dolorum.
+            </p>
+            <a class="entrada__boton" href="#">Read More</a>
+          </div>
+        </article>
+      </main>
+
+      <aside class="sidebar">
+        <h2 class="sidebar__titulo">New</h2>
+        <ul class="titulares p-0">
+          <li class="titulares__contenido">
+            <h3 class="titulares__titulo">Hydrogen VS Electric Cars</h3>
+            <p class="titulares__texto"> 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio pariatur minima inventore aliquid a vel</p>
+          </li>
+
+          <li class="titulares__contenido">
+            <h3 class="titulares__titulo">The Downsides of Al Artistry</h3>
+            <p class="titulares__texto"> 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio pariatur minima inventore aliquid a vel</p>
+          </li>
+
+          <li class="titulares__contenido">
+            <h3 class="titulares__titulo">Is VC Funding Driying Up?</h3>
+            <p class="titulares__texto"> 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio pariatur minima inventore aliquid a vel</p>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cierre grid -->
+
+    <footer class="footer contenedor">
+      <div class="footer__contenido">
+          <div class="footer__flex">
+              <div class="footer__imagen">
+                <img loading="lazy" src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
+              </div>
+              <div class="footer__decripcion">
+                  <p class="footer__num">01</p>
+                  <h3 class="footer__titulo">Reviving Retro PCs</h3>
+                  <p class="footer__parrafo"> 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio pariatur minima inventore aliquid a vel
+                  </p>
+              </div>
+              <!-- footer__descripcion -->
+          </div>
+          <!-- footer__flex -->
+
+          <div class="footer__flex">
+            <div class="footer__imagen">
+              <img loading="lazy" src="assets/images/image-top-laptops.jpg" alt="image-top-laptops">
+            </div>
+            <div class="footer__decripcion">
+                <p class="footer__num">01</p>
+                <h3 class="footer__titulo">Top 10 Laptops of 2025</h3>
+                <p class="footer__parrafo"> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio pariatur minima inventore aliquid a vel
+                </p>
+            </div>
+            <!-- footer__descripcion -->
+        </div>
+        <!-- footer__flex -->
+
+        <div class="footer__flex">
+          <div class="footer__imagen">
+            <img loading="lazy" src="assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
+          </div>
+          <div class="footer__decripcion">
+              <p class="footer__num">01</p>
+              <h3 class="footer__titulo">The Growth of Gaming</h3>
+              <p class="footer__parrafo"> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Distinctio pariatur minima inventore aliquid a vel
+              </p>
+          </div>
+          <!-- footer__descripcion -->
+      </div>
+      <!-- footer__flex -->
+      </div>
+      <!-- footer__contenido -->
+    </footer>
+  </body>
+
+  <script src="js/app.js"></script>
+</html>
