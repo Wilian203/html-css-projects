@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- fuente -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" crossorigin="crossorigin" as="font">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <div class=" grid">
+    <aside class="card--display">
+      <div class="card--front">
+        <img class="card--img" src="images/bg-card-front.png" alt="card front">
+        <div class="card--font__logo"><img src="images/card-logo.svg" alt="card logo"></div>
+        <div class="card--front__textos">
+          <p class="card--numero" id="numero-tarjeta">0000 0000 0000 0000</p>
+          <div class="card--nombre-expira">
+            <p class="card--nombre" id="nombre-tarjeta">JANE APPLESEED</p>
+            <div class="fecha">
+              <p class="card--fecha" id="fecha-tarjeta-1">00</p>
+              <p>/</p>
+              <p class="card-fecha" id="fecha-tarjeta-2">00</p>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    
+      <div class="card--back">
+        <img class="card--img" src="images/bg-card-back.png" alt="card back">
+        <p class="card--cvc" id="cvc-tarjeta">000</p>
+      </div>
+    </aside>
+    
+
+    <main class="form__section container">
+      <form action="#"  class="formulario" id="form">
+        <div class="formulario__grupo">
+          <label class="formulario__label" for="nombre">Cardholder Name</label>
+          <input class="formulario__input" type="text" id="nombre" placeholder="e.g. Jane Appleseed" />
+        </div>
+      
+        <div class="formulario__grupo">
+          <label class="formulario__label" for="numero">Card Number</label>
+          <input class="formulario__input" type="text" id="numero" placeholder="e.g. 1234 5678 9123 0000" />
+        </div>
+      
+        <div class="formulario__fecha">
+          <div class="formulario__input-wrapper">
+            <input class="formulario__input" type="text" id="mes" placeholder="MM" />
+          </div>
+
+          <div class="formulario__input-wrapper">
+            <input class="formulario__input" type="text" id="anio" placeholder="YY" />
+          </div>
+
+          <div class="formulario__input-wrapper">
+            <input class="formulario__input" type="text" id="cvc" placeholder="e.g. 123" />
+          </div>
+        </div>
+        
+      
+        <button class="boton opacity-50" type="submit" disabled >Confirm</button>
+      </form>
+
+      <section class="gracias">
+          <div class="gracias__imagen">
+              <img src="images/icon-complete.svg" alt="icon-complete">
+          </div>
+
+          <div class="gracias__contenido">
+            <h2 class="gracias__titulo">Thank you!</h2>
+              <p class="gracias__parrafo">We've added your card details</p>
+              <button class="boton" type="submit">Confirm</button>
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>  
+</body>
+</html>
