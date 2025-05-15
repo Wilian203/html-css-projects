@@ -1,0 +1,241 @@
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}   
+
+/* header */
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+/* Navegacion */
+
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.navegacion_enlace{
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+}
+
+.navegacion_enlace:hover,
+.navegacion_enlace--activo{
+    color: var(--secundario);
+}
+
+/* grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+  
+}
+
+@media (min-width: 768px) {
+     .grid{
+        grid-template-columns: repeat(3,1fr);
+     }
+}
+
+/* producto */
+.producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+.producto__informacion{
+    text-align: center;
+}
+
+.producto__nombre{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: var(--fuentePrincipal);
+ 
+    margin: 1rem 0;
+   
+}
+
+.producto__precio{
+    font-size: 2.8rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--secundario);
+    margin: 1rem 0;
+}
+
+.grafico{
+    min-height: 30rem;
+    grid-column: 1/3;
+}
+
+.grafico--camisas{
+    grid-row: 2/3;
+    background-image: url(../img/grafico1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grafico--node{
+    grid-row: 8/9;
+    background-image: url(../img/grafico2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .grafico--node{
+        grid-row: 5/6;
+        grid-column: 2/4;
+    }
+    
+}
+
+
+/* nosotros */
+
+.nosotros{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+     .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+     }
+}
+
+.comprar{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+     .bloques{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 2rem;
+     }
+}
+
+.bloque__titulo{
+    margin: 0;
+}
+
+/* camisa */
+
+@media (min-width: 768px) {
+     .camisa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+     }
+}
+
+/* formulario */
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.formulario__campo{
+    background-color: transparent;
+    border: 1rem solid var(--primarioOscuro);
+    padding: 1rem;
+    color: var(--blanco);
+}
+
+.formulario__submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 1.5rem;
+    grid-column: 1/3;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    
+}
+
+.footer__texto{
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: var(--fuentePrincipal);
+}
+
