@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+.encabezado{
+    @apply text-3xl font-bold text-gray-800 mx-2 mb-4
+}
+
+.flex-box{
+    @apply md:flex md:justify-between
+}
+@tailwind utilities;
